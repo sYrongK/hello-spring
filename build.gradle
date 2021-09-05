@@ -16,7 +16,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	//	JUnit5 버전이 기본 설정정
+	//	JUnit5 버전이 기본 설정
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
