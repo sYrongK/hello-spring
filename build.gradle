@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.4'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+}
+
+group = 'syrongk'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'	//	Java 호환 버전
+
+repositories {
+	mavenCentral()	//	외부 라이브러리를 mavenCentral()에서 다운받아라. 변경 가능
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	//	JUnit5 버전이 기본 설정정	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
